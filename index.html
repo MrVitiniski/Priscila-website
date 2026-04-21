@@ -5,72 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Harmonização Facial | Clínica Pricilla</title>
     <meta name="description" content="Resultados naturais em harmonização facial. Atendimento personalizado. Agende sua avaliação.">
-
-    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
-
-    <!-- Icons -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
-
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
 <header class="main-wrapper">
-    <div class="profile-container">
-        <!-- Verifique se o nome é Capa.jpg com C maiúsculo na pasta -->
+    <div class="banner-container">
         <img src="imagens/Capa.jpg" alt="Dra. Pricilla Silva" class="header-photo">
     </div>
 </header>
 
 <main class="content container">
-
     <section class="hero">
-        <h1 class="brand-title"></h1>
-        <p class="brand-subtitle">
-            Realce sua beleza com resultados elegantes.
-        </p>
+        <h1 class="brand-title">Dra. Pricilla Silva</h1>
+        <p class="brand-subtitle">Realce sua beleza com resultados elegantes.</p>
     </section>
 
-    <!-- CTA PRINCIPAL -->
     <section class="menu-centralizado">
         <div class="container-botoes">
-
-            <!-- AGENDAR -->
             <a href="https://wa.me/5531971138987?text=Olá, Gostaria de agendar minha avaliação Personalizada" class="btn-pill destaque" target="_blank">
                 <span>Agendar consulta</span>
                 <i class="ri-arrow-right-line"></i>
             </a>
 
-            <!-- VER PROCEDIMENTOS (Botão que abre a lista) -->
             <a href="javascript:void(0)" onclick="toggleProcedimentos()" class="btn-pill" id="btn-toggle">
                 <span id="txt-procedimentos">Ver Procedimentos</span>
                 <i class="ri-arrow-down-s-line" id="icone-seta"></i>
             </a>
 
-            <!-- SEÇÃO DE PROCEDIMENTOS (ESCONDIDA POR PADRÃO) -->
             <section id="procedimentos" class="lista-procedimentos" style="display: none;">
                 <h3 class="section-title">Procedimentos Exclusivos</h3>
-                
                 <div class="procedimento-item">
                     <i class="ri-magic-line"></i>
                     <h4>Botox</h4>
                     <p>Suavização de rugas e linhas de expressão com foco em um olhar descansado e natural.</p>
                 </div>
-
                 <div class="procedimento-item">
                     <i class="ri-face-recognition-line"></i>
                     <h4>Preenchimento Full Face</h4>
                     <p>Harmonização global com ácido hialurônico para devolver volumes e contornos faciais.</p>
                 </div>
-
                 <div class="procedimento-item">
                     <i class="ri-sparkling-2-line"></i>
                     <h4>Bioestimulador de Colágeno</h4>
                     <p>Tratamento profundo da flacidez que estimula a produção natural de colágeno da sua pele.</p>
                 </div>
-
                 <div class="procedimento-item">
                     <i class="ri-flashlight-line"></i>
                     <h4>Ultraformer</h4>
@@ -78,19 +59,17 @@
                 </div>
             </section>
 
-            <!-- LOCALIZAÇÃO -->
             <a href="https://maps.app.goo.gl/7ZD67tuCc577iwj86?g_st=iwb" target="_blank" class="btn-pill">
                 <span>Ver Localização</span>
                 <i class="ri-map-pin-line"></i>
             </a>
-
         </div>
     </section>
 
     <section class="diferenciais">
-        <p> Técnicas modernas e avançadas</p>
-        <p> Resultados naturais (sem exageros)</p>
-        <p> Avaliação individualizada</p>
+        <p>Técnicas modernas e avançadas</p>
+        <p>Resultados naturais (sem exageros)</p>
+        <p>Avaliação individualizada</p>
     </section>
 
     <section class="results">
@@ -105,11 +84,8 @@
     </div>
 
     <footer class="minimal-footer">
-        <p class="quote">
-            Beleza natural com harmonia facial.
-        </p>
+        <p class="quote">Beleza natural com harmonia facial.</p>
     </footer>
-
 </main>
 
 <nav class="mobile-bottom-nav">
@@ -117,22 +93,18 @@
         <i class="ri-home-5-line"></i>
         <span>Início</span>
     </a>
-
-    <a href="https://wa.me/5531971138987?text=Olá, quero agendar uma avaliação" 
-       class="nav-item central" aria-label="WhatsApp" target="_blank">
+    <a href="https://wa.me/5531971138987?text=Olá, quero agendar uma avaliação" class="nav-item central" target="_blank">
         <div class="inner-circle">
             <i class="ri-whatsapp-line"></i>
         </div>
     </a>
 </nav>
 
-<!-- SCRIPT PARA MOSTRAR/ESCONDER PROCEDIMENTOS -->
 <script>
 function toggleProcedimentos() {
     var area = document.getElementById("procedimentos");
     var texto = document.getElementById("txt-procedimentos");
     var icone = document.getElementById("icone-seta");
-
     if (area.style.display === "none") {
         area.style.display = "block";
         texto.innerText = "Fechar Procedimentos";
@@ -145,6 +117,5 @@ function toggleProcedimentos() {
     }
 }
 </script>
-
 </body>
 </html>
