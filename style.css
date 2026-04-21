@@ -304,7 +304,6 @@ body {
     font-size: 24px;
 }
 
-
 .main-wrapper {
     width: 100%;
     padding: 0;
@@ -334,4 +333,47 @@ body {
     .banner-container {
         max-width: 250px; /* Diminui um pouco mais em celulares muito pequenos */
     }
+}
+.section-title {
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    font-size: 1.6rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.lista-procedimentos {
+    width: 100%;
+    padding: 10px 5%; /* Dá uma margem elegante nas laterais no mobile */
+    background-color: transparent; /* Mantém o fundo bege do site */
+}
+
+.procedimento-item {
+    background-color: #ffffff; /* Fundo branco para o card */
+    border-radius: 15px;      /* Bordas arredondadas */
+    padding: 20px;            /* Espaço interno */
+    margin-bottom: 20px;      /* Espaço entre um card e outro */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Sombra bem suave */
+    text-align: left;         /* Garante o alinhamento à esquerda */
+    border: 1px solid #f0f0f0; /* Borda fininha para acabamento */
+}
+
+.procedimento-item h4 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin: 10px 0 5px 0;
+    color: #333;
+}
+
+.procedimento-item p {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.procedimento-item i {
+    color: #d4a373; /* Cor dos ícones (Dourado/Bege) */
+    font-size: 1.3rem;
 }
