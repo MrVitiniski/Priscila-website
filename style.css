@@ -275,10 +275,10 @@ body {
 }
 
 .header-photo {
-    width: auto;
+    width: 100%;
     height: auto;
     border-radius: 30px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.08);
 }
 
 @media (min-width: 769px) {
